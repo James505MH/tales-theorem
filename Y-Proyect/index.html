@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saludo Interactivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-image: url('images/back1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    h1 {
+      color: #ffffff;
+      margin-top: 50px;
+    }
+    p {
+      color: #ffffff;
+    }
+    .boton {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s; /* Agregamos una transición para suavizar el efecto */
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .boton-rojo {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+    }
+    .boton-azul {
+      background-color: #3498db;
+      color: white;
+      border: none;
+    }
+    .boton:hover {
+      background-color: #333;
+    }
+    /* Definimos la animación de rebote */
+    .boton-rebote:hover {
+      animation: rebote 0.5s infinite alternate;
+    }
+    #wel {
+      background-color: rgba(98, 98, 100, 0.8);
+      border-style: ridge ;
+      max-width:max-content ; /* Ancho máximo del contenedor */
+      margin: 0 auto; /* Centrar el contenedor horizontalmente */
+      padding: 20px; /* Añadir un espacio alrededor del contenido */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }  
+
+    @keyframes rebote {
+      0% {
+        transform: translateY(5px); /* Sin desplazamiento inicial */
+      }
+      100% {
+        transform: translateY(-5px); /* Desplazamiento hacia arriba */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wel">
+    <h1>!Bienvenido a la Demostración Interactiva!</h1>
+    <p>¿Listo para aprender matemáticas de forma simple?</p>
+    <p>Ilustraremos de forma interactiva y fácil formas y figuras</p>
+  </div>
+  <!-- Botón Azul con animación de rebote -->
+  <a href="tales1.html" class="boton boton-azul boton-rebote">Has click aquí</a>
+</body>
+</html>
+

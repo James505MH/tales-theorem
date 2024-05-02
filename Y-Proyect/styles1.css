@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#concepts {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.concept-group {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+h3 {
+    color: #666;
+}
+
+p {
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
